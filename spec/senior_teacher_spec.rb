@@ -1,7 +1,7 @@
 require_relative '../senior_teacher'
-
+require_relative '../teacher'
 describe SeniorTeacher do
-  let(:jan) { SeniorTeacher.new({name: "Jan", age: 35}) }
+  let(:jan) { SeniorTeacher.new({name: "Jan", age: 35, target_raise: 1000}) }
   let(:default_teacher) { SeniorTeacher.new }
 
   it "offers high fives" do
